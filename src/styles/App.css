@@ -1,0 +1,24 @@
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: calc(100vh - 180px);
+}
+
+article {
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.8;
+}
