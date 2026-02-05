@@ -1,6 +1,11 @@
 import type { LocalizedContent } from './types';
 
+// 技術スタック（言語非依存）
+// SkillIcons ID（小文字）で指定
+export const techStack = ['github', 'apple', 'python', 'pytorch', 'swift', 'flutter', 'dart', 'react'];
+
 interface ProfileContent {
+  heading: string;
   bio: string;
   bioLinkText: string;
   career: {
@@ -14,7 +19,8 @@ interface ProfileContent {
 
 export const profileContent: LocalizedContent<ProfileContent> = {
   ja: {
-    bio: 'こちらは{0}のポートフォリオサイトです．<br>従事しているプロジェクトや過去の実績について掲載しています．',
+    heading: 'Profile',
+    bio: 'こちらは{0}のポートフォリオサイトです．従事しているプロジェクトや過去の実績について掲載しています．',
     bioLinkText: 'Applica-760',
     career: {
       heading: '経歴',
@@ -29,13 +35,15 @@ export const profileContent: LocalizedContent<ProfileContent> = {
     },
   },
   en: {
-    bio: 'This is the portfolio site of {0}.',
+    heading: 'Profile',
+    bio: 'This is the portfolio site of {0}, showcasing projects and past achievements.',
     bioLinkText: 'Applica-760',
     career: {
       heading: 'Career',
       items: [
-        '20XX - Graduated from University',
-        '20XX - Started career as a Software Engineer',
+        'March 2023 — Graduated from the Department of Electronic Control Engineering, National Institute of Technology, Sasebo College',
+        'March 2026 — Expected Graduation, Department of Interdisciplinary Fundamental Engineering, Faculty of Engineering, Kyushu University',
+        'April 2026 — Expected Enrollment, Interdisciplinary Graduate School of Engineering Sciences, Kyushu University (Master’s Program)',
       ],
     },
     techStack: {

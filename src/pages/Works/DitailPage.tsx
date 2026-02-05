@@ -1,9 +1,10 @@
-import { Container, Title, Text, Stack, Badge, Group } from '@mantine/core';
+import { Container, Title, Text, Stack, Group } from '@mantine/core';
 import { useParams, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useContent } from '../../hooks/useContent';
 import { worksContent } from '../../contents';
 import MarkdownRenderer from '../../components/ui/MarkdownRenderer';
+import TagList from '../../components/works/TagList';
 
 function WorkDetailPage() {
   const { id, lang } = useParams<{ id: string; lang: string }>();
@@ -14,8 +15,8 @@ function WorkDetailPage() {
   const work = works.works.find((w) => w.id === id);
 
   useEffect(() => {
-    if (work && work.id === '1') {
-      import(`../../contents/works/project1.${language}.md?raw`)
+    if (work) {
+      import(`../../contents/works/${work.id}/content.${language}.md?raw`)
         .then((module) => {
           setMarkdownContent(module.default);
         })
@@ -32,14 +33,10 @@ function WorkDetailPage() {
   return (
     <Container size="lg" py="xl">
       <Stack gap="lg">
-        <Title order={1}>{work.title}</Title>
-        
         <Group gap="xs">
-          {work.tags.map((tag) => (
-            <Badge key={tag} variant="light" size="lg" tt="none">
-              {tag}
-            </Badge>
-          ))}
+          <Title order={1}>{work.title}</Title>
+          
+          <TagList tags={work.tags} size="md" />
         </Group>
 
         <Text size="sm" c="dimmed">

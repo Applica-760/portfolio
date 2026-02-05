@@ -7,7 +7,7 @@ function ProfileSection() {
   const profile = get(profileContent);
 
   return (
-    <Paper p="xl" radius="md">
+    <Paper p="md" radius="md">
       <Text mb="lg" component="div">
         {profile.bio.split('{0}').map((part, index, array) => (
           index < array.length - 1 ? (

@@ -1,23 +1,28 @@
-import { Container, Title, Stack, SimpleGrid } from '@mantine/core';
+import { Container, Title, Paper, Stack, SimpleGrid } from '@mantine/core';
 import { useContent } from '../../hooks/useContent';
 import WorkCard from '../../components/works/WorkCard';
 import ProfileSection from '../../components/profile/ProfileSection';
-import { worksContent } from '../../contents';
+import { worksContent, profileContent } from '../../contents';
 
 function HomePage() {
   const { get } = useContent();
   const works = get(worksContent);
+  const profile = get(profileContent);
 
   return (
     <Container size="lg" py="xl">
-      <Stack gap="xl" mb="3rem">
+      <Stack gap="lg" mb="3rem">
+        <Title order={2} size="h2">
+          {profile.heading}
+        </Title>
         <ProfileSection />
       </Stack>
 
       <Stack gap="lg">
-        <Title order={2} size="h3">
+        <Title order={2} size="h2">
           {works.heading}
         </Title>
+        <Paper p="md" radius="md">
         <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
           {works.works.map((work) => (
             <WorkCard
@@ -26,6 +31,7 @@ function HomePage() {
             />
           ))}
         </SimpleGrid>
+        </Paper>
       </Stack>
     </Container>
   );

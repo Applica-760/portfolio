@@ -1,4 +1,5 @@
 import Markdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 interface MarkdownRendererProps {
   content: string;
@@ -7,6 +8,7 @@ interface MarkdownRendererProps {
 function MarkdownRenderer({ content }: MarkdownRendererProps) {
   return (
     <Markdown
+      rehypePlugins={[rehypeRaw]}
       components={{
         h1: ({ children }) => (
           <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '1rem' }}>
@@ -24,7 +26,7 @@ function MarkdownRenderer({ content }: MarkdownRendererProps) {
           </h3>
         ),
         p: ({ children }) => (
-          <p style={{ marginBottom: '1rem', lineHeight: 1.6 }}>
+          <p style={{ marginBottom: '0rem', lineHeight: 1.6 }}>
             {children}
           </p>
         ),

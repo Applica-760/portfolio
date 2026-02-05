@@ -17,7 +17,7 @@ export const uiContent: LocalizedContent<UiContent> = {
       subtitle: 'GitHub Portfolio',
     },
     footer: {
-      copyright: '© 2026 Portfolio. All rights reserved.',
+      copyright: '',
     },
   },
   en: {
@@ -26,7 +26,7 @@ export const uiContent: LocalizedContent<UiContent> = {
       subtitle: 'GitHub Portfolio',
     },
     footer: {
-      copyright: '© 2026 Portfolio. All rights reserved.',
+      copyright: '',
     },
   },
 };
