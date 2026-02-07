@@ -3,6 +3,7 @@ import rehypeRaw from 'rehype-raw';
 import { Fragment, type ReactNode, isValidElement, Children } from 'react';
 import LinkCard from './LinkCard';
 import LinkCardContainer from './LinkCardContainer';
+import ImageRow from './ImageRow';
 
 interface MarkdownRendererProps {
   content: string;
@@ -30,7 +31,7 @@ function MarkdownRenderer({ content }: MarkdownRendererProps) {
           </h1>
         ),
         h2: ({ children }: { children: ReactNode }) => (
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '0.75rem' }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '0rem', paddingLeft: '1.0rem' }}>
             {children}
           </h2>
         ),
@@ -45,11 +46,44 @@ function MarkdownRenderer({ content }: MarkdownRendererProps) {
             return <Fragment>{children}</Fragment>;
           }
           return (
-            <p style={{ marginBottom: '0rem', lineHeight: 1.6 }}>
+            <p style={{ marginBottom: '0rem', lineHeight: 1.6, paddingLeft: '1.5rem' }}>
               {children}
             </p>
           );
         },
+        ul: ({ children }: { children: ReactNode }) => (
+          <ul style={{ paddingLeft: '3rem', marginBottom: '1rem', lineHeight: 1.6 }}>
+            {children}
+          </ul>
+        ),
+        ol: ({ children }: { children: ReactNode }) => (
+          <ol style={{ paddingLeft: '3rem', marginBottom: '1rem', lineHeight: 1.6 }}>
+            {children}
+          </ol>
+        ),
+        li: ({ children }: { children: ReactNode }) => (
+          <li style={{ marginBottom: '0.5rem' }}>
+            {children}
+          </li>
+        ),
+        img: ({ src, alt, width, style }: { src?: string; alt?: string; width?: string; style?: any }) => (
+          <img
+            src={src}
+            alt={alt || ''}
+            style={{
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              marginTop: '1rem',
+              marginBottom: '1rem',
+              maxWidth: width || '100%',
+              width: width || '100%',
+              height: 'auto',
+              borderRadius: '8px',
+              ...style,
+            }}
+          />
+        ),
         linkcard: ({ node, ...props }: any) => (
           <LinkCard
             url={props.url as string}
@@ -60,6 +94,9 @@ function MarkdownRenderer({ content }: MarkdownRendererProps) {
         ),
         'linkcard-container': ({ children }: { children: ReactNode }) => (
           <LinkCardContainer>{children}</LinkCardContainer>
+        ),
+        'image-row': ({ children }: { children: ReactNode }) => (
+          <ImageRow>{children}</ImageRow>
         ),
       } as any}
     >

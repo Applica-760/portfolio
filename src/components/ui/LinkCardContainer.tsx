@@ -13,7 +13,7 @@ function LinkCardContainer({ children }: LinkCardContainerProps) {
       style={{ 
         marginTop: '1rem', 
         marginBottom: '1rem',
-        maxWidth: '80%',
+        maxWidth: '90%',
         marginLeft: 'auto',
         marginRight: 'auto',
       }}

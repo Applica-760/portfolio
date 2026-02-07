@@ -64,7 +64,20 @@ function LinkCard({ url, title, description, image }: LinkCardProps) {
       </Card.Section>
 
       <Stack gap={4} mt="sm">
-        <Text fw={600} size="lg" lineClamp={2} style={{ minHeight: '3.6em' }}>
+        <Text 
+          fw={600} 
+          size="lg" 
+          lineClamp={2} 
+          style={{ 
+            minHeight: '3.6em',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            display: '-webkit-box',
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: 'vertical',
+            wordBreak: 'break-word',
+          }}
+        >
           {title}
         </Text>
         {description && (

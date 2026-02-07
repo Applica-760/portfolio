@@ -39,7 +39,7 @@ function WorkDetailPage() {
           <TagList tags={work.tags} size="md" />
         </Group>
 
-        <Text size="sm" c="dimmed">
+        <Text size="sm" c="dimmed" style={{ paddingLeft: '1.5rem' }}>
           {work.description}
         </Text>
 

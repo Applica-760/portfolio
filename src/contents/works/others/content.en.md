@@ -37,3 +37,30 @@
 
 - **Dormitory Website Development**  
   Developed the legacy dormitory website as part of a team.
+
+# Links
+
+<linkcard-container>
+
+<linkcard url="https://www.sasebo.ac.jp/articles/38817/" 
+title="亀山電機 第6回学生ものづくり＆アイデアコンテスト" 
+description="2020年11月24日" 
+image="https://www.sasebo.ac.jp/wp-content/uploads/2023/07/c422c9289972914bde9a8f41c6b9ad3b-900x675.jpg"></linkcard>
+
+<linkcard url="https://www.sasebo.ac.jp/articles/31082/" 
+title="第3回西九州させぼ広域都市圏ビジネスプランコンテスト「START UP 99」" 
+description="2022年4月21日" 
+image="https://www.sasebo.ac.jp/wp-content/uploads/2022/04/8cf200473b0f84be2957e5231dbbaf05.jpg"></linkcard>
+
+<linkcard url="https://ibisml.org/ibis2024/posters/#:~:text=1%2DE%2D16,-%5D%20Echo%20State%20Network" 
+title="第27回情報論的学習理論ワークショップ ポスター研究発表" 
+description="2024年11月5日" 
+image="https://ibisml.org/ibis2024/files/2024/05/ibisws-header-2024-1.png"></linkcard>
+
+<linkcard url="https://www.sasebo.ac.jp/articles/28697/" 
+title="長崎県警サイバーセキュリティボランティア　委嘱状交付式" 
+description="2021年7月26日" 
+image="https://www.sasebo.ac.jp/wp-content/uploads/2021/07/a35c75e6f441442bbf765d021fd631b9.jpg"></linkcard>
+
+
+</linkcard-container>

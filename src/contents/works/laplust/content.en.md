@@ -8,6 +8,7 @@ At LAplust Inc., which was founded by a senior alumnus from Sasebo National Coll
 Among the projects we worked on collaboratively, the ones that have been published as technical blogs are listed below.
 
 <linkcard-container>
+
 <linkcard url="https://note.com/laplust/n/n23f47ef71370" 
 title="Pick and Placeタスクへの世界モデルによるアプローチ - robosuite/TD-MPC2 -" 
 description="2025.12.29" 
@@ -49,6 +50,7 @@ image="https://assets.st-note.com/production/uploads/images/229600803/rectangle_
 A blog post about the short-term internship during my third year of undergraduate studies, which served as the catalyst for the collaboration mentioned above.
 
 <linkcard-container>
+
 <linkcard url="https://laplust.com/news_contents/euDlXpBw" 
 title="LAplustインターンシップに参加して" 
 description="2024.10.11" 

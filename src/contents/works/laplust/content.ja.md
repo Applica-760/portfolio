@@ -1,5 +1,5 @@
 # 概要
-私と同じ佐世保高専出身の先輩が企業された[株式会社LAplust](https://laplust.com)様において，縁あって長期インターンという形で先端AIモデルの調査，実装検証に携わっています．
+私と同じ佐世保高専出身の先輩が企業された[株式会社LAplust↗︎](https://laplust.com)様において，縁あって長期インターンという形で先端AIモデルの調査，実装検証に携わっています．
 
 <br>
 
@@ -8,6 +8,7 @@
 共同で取り組んだプロジェクトのうち，技術ブログ化したものを以下に掲載します．
 
 <linkcard-container>
+
 <linkcard url="https://note.com/laplust/n/n23f47ef71370" 
 title="Pick and Placeタスクへの世界モデルによるアプローチ - robosuite/TD-MPC2 -" 
 description="2025年12月29日" 
@@ -49,6 +50,7 @@ image="https://assets.st-note.com/production/uploads/images/229600803/rectangle_
 上記連携の契機となった学部3年次の短期インターンのブログ．
 
 <linkcard-container>
+
 <linkcard url="https://laplust.com/news_contents/euDlXpBw" 
 title="LAplustインターンシップに参加して" 
 description="2024年10月11日" 
