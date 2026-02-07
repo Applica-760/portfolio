@@ -7,12 +7,13 @@
     <title>portfolio</title>
     <script>
       // GitHub Pages SPAリダイレクト復元
-      // 404.htmlから保存されたパスを復元
+      // 404.htmlから保存されたパスを復元（React読み込み前に実行）
       (function() {
-        var redirect = sessionStorage.getItem('redirect');
-        if (redirect && redirect !== '/') {
-          sessionStorage.removeItem('redirect');
-          history.replaceState(null, null, redirect);
+        var redirectPath = sessionStorage.getItem('redirectPath');
+        if (redirectPath) {
+          sessionStorage.removeItem('redirectPath');
+          // 保存されたパスに履歴を置き換え
+          history.replaceState(null, null, redirectPath);
         }
       })();
     </script>
