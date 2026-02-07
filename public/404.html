@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPAリダイレクトハック
+      // 404ページのURLパスをsessionStorageに保存し、index.htmlにリダイレクト
+      (function() {
+        var pathSegmentsToKeep = 1; // portfolioの部分を保持
+        var l = window.location;
+        
+        // /portfolio/... の部分を取得
+        var path = l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/') + '/';
+        var route = l.pathname.slice(path.length - 1) + (l.search || '');
+        
+        // 復元用のパスを保存
+        sessionStorage.setItem('redirect', route);
+        
+        // index.htmlにリダイレクト
+        l.replace(path + '#redirect');
+      })();
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

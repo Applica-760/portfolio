@@ -5,6 +5,17 @@
     <link rel="icon" type="image/png" href="/portfolio/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <script>
+      // GitHub Pages SPAリダイレクト復元
+      // 404.htmlから保存されたパスを復元
+      (function() {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect && redirect !== '/') {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
