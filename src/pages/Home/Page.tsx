@@ -2,6 +2,8 @@ import { Container, Title, Paper, Stack, SimpleGrid } from '@mantine/core';
 import { useContent } from '../../hooks/useContent';
 import WorkCard from '../../components/works/WorkCard';
 import ProfileSection from '../../components/profile/ProfileSection';
+import SummarySection from '../../components/profile/SummarySection';
+import LinksSection from '../../components/profile/LinksSection';
 import { worksContent, profileContent } from '../../contents';
 
 function HomePage() {
@@ -18,7 +20,14 @@ function HomePage() {
         <ProfileSection />
       </Stack>
 
-      <Stack gap="lg">
+      <Stack gap="lg" mb="3rem">
+        <Title order={2} size="h1">
+          {profile.summary.heading}
+        </Title>
+        <SummarySection />
+      </Stack>
+
+      <Stack gap="lg" mb="3rem">
         <Title order={2} size="h1">
           {works.heading}
         </Title>
@@ -33,6 +42,13 @@ function HomePage() {
         </SimpleGrid>
         </Paper>
       </Stack>
+
+      {/* <Stack gap="lg">
+        <Title order={2} size="h1">
+          {profile.links.heading}
+        </Title>
+        <LinksSection />
+      </Stack> */}
     </Container>
   );
 }

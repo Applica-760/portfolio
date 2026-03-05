@@ -40,8 +40,8 @@ function LinkCard({ url, title, description, image }: LinkCardProps) {
         {image ? (
           <Image
             src={image}
-            height="100%"
-            width="100%"
+            h="100%"
+            w="100%"
             alt={title}
             fit="cover"
           />

@@ -9,6 +9,16 @@
 
 <linkcard-container>
 
+<linkcard url="https://note.com/laplust/n/n53b590f453af" 
+title="Pick and Placeタスクにおける特異点罰則の検討 -robosuite / TD-MPC2-" 
+description="2026年2月17日" 
+image="https://assets.st-note.com/production/uploads/images/252391813/rectangle_large_type_2_520e14f0d4d2204a30c0c4c78245b1eb.png?width=1280"></linkcard>
+
+<linkcard url="https://note.com/laplust/n/n43c9c0df7e4d" 
+title="Pick and Place タスクにおける密な報酬・疎な報酬の比較 -robosuite / TD-MPC2-" 
+description="2026年2月17日" 
+image="https://assets.st-note.com/production/uploads/images/252388794/rectangle_large_type_2_dce1cd832080ee7fce88e8ba038ae21d.png?width=1280"></linkcard>
+
 <linkcard url="https://note.com/laplust/n/n23f47ef71370" 
 title="Pick and Placeタスクへの世界モデルによるアプローチ - robosuite/TD-MPC2 -" 
 description="2025年12月29日" 
