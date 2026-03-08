@@ -3,7 +3,7 @@ import { useContent } from '../../hooks/useContent';
 import WorkCard from '../../components/works/WorkCard';
 import ProfileSection from '../../components/profile/ProfileSection';
 import SummarySection from '../../components/profile/SummarySection';
-import LinksSection from '../../components/profile/LinksSection';
+// import LinksSection from '../../components/profile/LinksSection';
 import { worksContent, profileContent } from '../../contents';
 
 function HomePage() {
