@@ -41,6 +41,12 @@ export const worksContent: LocalizedContent<WorksContent> = {
         tags: ['Python', 'Edge Device', 'LPWA/LoRA'],
       },
       {
+        id: 'portfolio',
+        title: 'Portfolio Site',
+        description: 'このサイト自体の開発 - React + TypeScript による日英対応ポートフォリオ',
+        tags: ['React', 'TypeScript', 'Vite'],
+      },
+      {
         id: 'others',
         title: 'Others',
         description: 'そのほか細かなアピールポイントを列挙',
@@ -74,6 +80,12 @@ export const worksContent: LocalizedContent<WorksContent> = {
         title: 'Contest Project',
         description: 'Developed a solution to the growing problem of marine debris on remote islands, securing a budget of several million yen',
         tags: ['Python', 'Edge Device', 'LPWA/LoRA'],
+      },
+      {
+        id: 'portfolio',
+        title: 'Portfolio Site',
+        description: 'This site itself — a bilingual portfolio built with React + TypeScript',
+        tags: ['React', 'TypeScript', 'Vite'],
       },
       {
         id: 'others',
