@@ -1,13 +1,24 @@
 # 概要
-私と同じ佐世保高専出身の先輩が起業された[株式会社LAplust↗︎](https://laplust.com)様において，縁あって長期インターンという形で先端AIモデルの調査，実装検証に携わっています．
+私と同じ佐世保高専出身の先輩が起業された[株式会社LAplust↗︎](https://laplust.com)様において、縁あって長期インターンという形で先端AIモデルの調査、実装検証に携わっています。
 
 <br>
 
 # 技術ブログ一覧
 
-共同で取り組んだプロジェクトのうち，技術ブログ化したものを以下に掲載します．
+共同で取り組んだプロジェクトのうち、技術ブログ化したものを以下に掲載します。
 
 <linkcard-container>
+
+
+<linkcard url="https://note.com/laplust/n/nc8e94a667f79" 
+title="独自データを用いた模倣学習の実装 -LeRobot / SO101-" 
+description="2026年3月10日" 
+image="https://assets.st-note.com/production/uploads/images/257977534/rectangle_large_type_2_b04b6f93038f246b278afadaea8c7944.png?width=1280"></linkcard>
+
+<linkcard url="https://note.com/laplust/n/n98504f902d68" 
+title="模倣学習を用いたPick and Placeタスク -robomimic-" 
+description="2026年3月8日" 
+image="https://assets.st-note.com/production/uploads/images/257427519/rectangle_large_type_2_d564e5754b4dbf3c27f01b9f1c14434a.png?width=1280"></linkcard>
 
 <linkcard url="https://note.com/laplust/n/n53b590f453af" 
 title="Pick and Placeタスクにおける特異点罰則の検討 -robosuite / TD-MPC2-" 
@@ -57,7 +68,7 @@ image="https://assets.st-note.com/production/uploads/images/229600803/rectangle_
 
 # インターン参加ブログ
 
-上記連携の契機となった学部3年次の短期インターンのブログ．
+上記連携の契機となった学部3年次の短期インターンのブログ。
 
 <linkcard-container>
 

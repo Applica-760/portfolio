@@ -5,9 +5,10 @@ interface LinkCardProps {
   title: string;
   description?: string;
   image?: string;
+  imageFit?: 'width' | 'height';
 }
 
-function LinkCard({ url, title, description, image }: LinkCardProps) {
+function LinkCard({ url, title, description, image, imageFit = 'width' }: LinkCardProps) {
   return (
     <Card
       component="a"
@@ -43,7 +44,7 @@ function LinkCard({ url, title, description, image }: LinkCardProps) {
             h="100%"
             w="100%"
             alt={title}
-            fit="cover"
+            fit={imageFit === 'height' ? 'contain' : 'cover'}
           />
         ) : (
           <Box

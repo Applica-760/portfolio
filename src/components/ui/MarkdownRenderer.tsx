@@ -1,9 +1,11 @@
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
-import { Fragment, type ReactNode, isValidElement, Children } from 'react';
+import { Fragment, type ReactNode, isValidElement, Children, createContext, useContext } from 'react';
 import LinkCard from './LinkCard';
 import LinkCardContainer from './LinkCardContainer';
 import ImageRow from './ImageRow';
+
+const InsidePreContext = createContext(false);
 
 interface MarkdownRendererProps {
   content: string;
@@ -90,6 +92,7 @@ function MarkdownRenderer({ content }: MarkdownRendererProps) {
             title={props.title as string}
             description={props.description as string}
             image={props.image as string}
+            imageFit={(props.imagefit || props.imageFit) as 'width' | 'height' | undefined}
           />
         ),
         'linkcard-container': ({ children }: { children: ReactNode }) => (
@@ -98,6 +101,49 @@ function MarkdownRenderer({ content }: MarkdownRendererProps) {
         'image-row': ({ children }: { children: ReactNode }) => (
           <ImageRow>{children}</ImageRow>
         ),
+        pre: ({ children }: { children: ReactNode }) => (
+          <InsidePreContext.Provider value={true}>
+            <pre style={{
+              background: 'rgba(150, 158, 166, 0.2)',
+              border: '1px solid #d0d7de',
+              borderRadius: '6px',
+              padding: '16px',
+              overflowX: 'auto',
+              marginLeft: '1.5rem',
+              marginRight: '1.5rem',
+              marginBottom: '1rem',
+              fontSize: '85%',
+              lineHeight: 1.45,
+            }}>
+              {children}
+            </pre>
+          </InsidePreContext.Provider>
+        ),
+        code: ({ children }: { children: ReactNode }) => {
+          const insidePre = useContext(InsidePreContext);
+          const githubMono = "'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace";
+          return insidePre ? (
+            <code style={{
+              fontFamily: githubMono,
+              color: '#24292f',
+              background: 'transparent',
+            }}>
+              {children}
+            </code>
+          ) : (
+            <code style={{
+              fontFamily: githubMono,
+              background: 'rgba(150, 158, 166, 0.2)',
+              border: '1px solid #d0d7de',
+              padding: '0.2em 0.4em',
+              borderRadius: '6px',
+              fontSize: '85%',
+              color: '#24292f',
+            }}>
+              {children}
+            </code>
+          );
+        },
       } as any}
     >
       {content}

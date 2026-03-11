@@ -3,7 +3,8 @@ import { useContent } from '../../hooks/useContent';
 import WorkCard from '../../components/works/WorkCard';
 import ProfileSection from '../../components/profile/ProfileSection';
 import SummarySection from '../../components/profile/SummarySection';
-// import LinksSection from '../../components/profile/LinksSection';
+import LinkCard from '../../components/ui/LinkCard';
+import LinkCardContainer from '../../components/ui/LinkCardContainer';
 import { worksContent, profileContent } from '../../contents';
 
 function HomePage() {
@@ -43,12 +44,17 @@ function HomePage() {
         </Paper>
       </Stack>
 
-      {/* <Stack gap="lg">
+      <Stack gap="lg">
         <Title order={2} size="h1">
           {profile.links.heading}
         </Title>
-        <LinksSection />
-      </Stack> */}
+        <LinkCardContainer>
+          {profile.links.items.map((link) => (
+            <LinkCard key={link.url} {...link} />
+          ))}
+        </LinkCardContainer>
+        
+      </Stack>
     </Container>
   );
 }

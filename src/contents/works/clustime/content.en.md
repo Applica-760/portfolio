@@ -71,3 +71,25 @@ The other engineer primarily handled Firebase Cloud Functions, including server-
 We strictly followed Feature-Driven Design and a layered architecture, improving maintainability by separating concerns by feature and clarifying responsibilities.
 
 <br>
+
+<linkcard-container>
+
+<linkcard url="https://github.com/Applica-760/clustime"
+title="ClusTime GitHub Repository"
+description=""
+image="https://assets.st-note.com/production/uploads/images/24127642/rectangle_large_type_2_802007386bb75d9db15a6dd2880e2584.jpg"
+imageFit="height"></linkcard>
+
+<linkcard url="https://apps.apple.com/jp/app/clustime/id6749456160"
+title="ClusTime -App Store-"
+description=""
+image="https://toolbox.marketingtools.apple.com/_next/static/media/apps.1da5aac4.png"
+imageFit="height"></linkcard>
+
+<linkcard url="https://play.google.com/store/apps/details?id=com.clustime.clustime.beta&hl=ja"
+title="ClusTime -Play Store-"
+description=""
+image="https://iconlab.kentakomiya.com/wp/wp-content/uploads/2019/09/icon0162-229x256.png"
+imageFit="height"></linkcard>
+
+</linkcard-container>

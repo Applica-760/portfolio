@@ -9,9 +9,29 @@ Among the projects we worked on collaboratively, the ones that have been publish
 
 <linkcard-container>
 
-<linkcard url="https://note.com/laplust/n/n23f47ef71370" 
-title="Pick and Placeタスクへの世界モデルによるアプローチ - robosuite/TD-MPC2 -" 
-description="2025.12.29" 
+<linkcard url="https://note.com/laplust/n/nc8e94a667f79"
+title="独自データを用いた模倣学習の実装 -LeRobot / SO101-"
+description="2026.3.10"
+image="https://assets.st-note.com/production/uploads/images/257977534/rectangle_large_type_2_b04b6f93038f246b278afadaea8c7944.png?width=1280"></linkcard>
+
+<linkcard url="https://note.com/laplust/n/n98504f902d68"
+title="模倣学習を用いたPick and Placeタスク -robomimic-"
+description="2026.3.8"
+image="https://assets.st-note.com/production/uploads/images/257427519/rectangle_large_type_2_d564e5754b4dbf3c27f01b9f1c14434a.png?width=1280"></linkcard>
+
+<linkcard url="https://note.com/laplust/n/n53b590f453af"
+title="Pick and Placeタスクにおける特異点罰則の検討 -robosuite / TD-MPC2-"
+description="2026.2.17"
+image="https://assets.st-note.com/production/uploads/images/252391813/rectangle_large_type_2_520e14f0d4d2204a30c0c4c78245b1eb.png?width=1280"></linkcard>
+
+<linkcard url="https://note.com/laplust/n/n43c9c0df7e4d"
+title="Pick and Place タスクにおける密な報酬・疎な報酬の比較 -robosuite / TD-MPC2-"
+description="2026.2.17"
+image="https://assets.st-note.com/production/uploads/images/252388794/rectangle_large_type_2_dce1cd832080ee7fce88e8ba038ae21d.png?width=1280"></linkcard>
+
+<linkcard url="https://note.com/laplust/n/n23f47ef71370"
+title="Pick and Placeタスクへの世界モデルによるアプローチ - robosuite/TD-MPC2 -"
+description="2025.12.29"
 image="https://assets.st-note.com/production/uploads/images/239762927/rectangle_large_type_2_01492f5b11f7166fc27b20538138ffff.png?width=1280"></linkcard>
 
 <linkcard url="https://note.com/laplust/n/n35b7987e61c6" 

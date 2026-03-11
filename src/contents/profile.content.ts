@@ -14,6 +14,7 @@ interface LinkItem {
   title: string;
   description?: string;
   image?: string;
+  imageFit?: 'width' | 'height';
 }
 
 interface ProfileContent {
@@ -74,10 +75,65 @@ export const profileContent: LocalizedContent<ProfileContent> = {
       heading: 'Links',
       items: [
         {
-          url: 'https://github.com/Applica-760',
-          title: 'GitHub',
-          description: 'Applica-760',
+          url: 'https://note.com/laplust/n/n35b7987e61c6',
+          title: 'Pick and Placeタスクの困難さに関する分析と考察 - robosuite / SAC -',
+          description: '2025年12月29日',
+          image: 'https://assets.st-note.com/production/uploads/images/239755547/rectangle_large_type_2_fda7130e674151ac2d1933f5937e9d71.png?width=1280',
         },
+        {
+          url: 'https://note.com/laplust/n/n10dc6fbcd657',
+          title: 'SAHIを用いた微小物体検出',
+          description: '2025年11月18日',
+          image: 'https://assets.st-note.com/production/uploads/images/229601215/rectangle_large_type_2_3584472641e773415d5fd23a465fc720.png?width=1280',
+        },
+        {
+          url: 'https://ibisml.org/ibis2024/posters/#:~:text=1%2DE%2D16,-%5D%20Echo%20State%20Network',
+          title: '第27回情報論的学習理論ワークショップ ポスター研究発表',
+          description: '2024年11月5日',
+          image: 'https://ibisml.org/ibis2024/files/2024/05/ibisws-header-2024-1.png',
+        },
+        {
+          url: 'https://pypi.org/project/esn-lab/',
+          title: 'esn_lab PyPIページ',
+          description: '',
+          image: 'https://i.gzn.jp/img/2023/05/25/pypi-was-subpoenaed/00.jpg',
+          imageFit: 'height'
+        },
+        {
+          url: 'https://apps.apple.com/jp/app/clustime/id6749456160',
+          title: 'ClusTime -App Store-',
+          description: '',
+          image: 'https://toolbox.marketingtools.apple.com/_next/static/media/apps.1da5aac4.png',
+          imageFit: 'height'
+        },
+        {
+          url: 'https://play.google.com/store/apps/details?id=com.clustime.clustime.beta&hl=ja',
+          title: 'ClusTime -Play Store-',
+          description: '',
+          image: 'https://iconlab.kentakomiya.com/wp/wp-content/uploads/2019/09/icon0162-229x256.png',
+          imageFit: 'height'
+        },
+        {
+          url: 'https://wicon.jp/2023/final',
+          title: 'WiCON2023 本選大会 結果発表',
+          description: '2024年3月5日',
+          image: 'https://storage.googleapis.com/studio-design-asset-files/projects/v7qGwxbMqL/s-2400x1601_v-frms_webp_737747cb-01b5-4646-825e-33d71185b90f_small.webp',
+        },
+        {
+          url: 'https://www.sasebo.ac.jp/articles/38817/',
+          title: '亀山電機 第6回学生ものづくり＆アイデアコンテスト',
+          description: '2020年11月24日',
+          image: 'https://www.sasebo.ac.jp/wp-content/uploads/2023/07/c422c9289972914bde9a8f41c6b9ad3b-900x675.jpg',
+        },
+        {
+          url: 'https://www.sasebo.ac.jp/articles/31082/',
+          title: '第3回西九州させぼ広域都市圏ビジネスプランコンテスト「START UP 99」',
+          description: '2022年4月21日',
+          image: 'https://www.sasebo.ac.jp/wp-content/uploads/2022/04/8cf200473b0f84be2957e5231dbbaf05.jpg',
+        },
+        
+        
+        
       ],
     },
   },
@@ -100,16 +156,16 @@ export const profileContent: LocalizedContent<ProfileContent> = {
       heading: 'Summary',
       items: [
         {
-          subtitle: 'Practical Implementation Skills',
-          body: 'Through participation in real-world projects such as Laplust and ESN Lab, I have gained end-to-end experience spanning requirements definition, implementation, and operation. I have cultivated the ability to deliver software that works in production, beyond academic knowledge alone.',
+          subtitle: 'Practical-Level Problem-Solving Ability',
+          body: 'Through multiple projects including a long-term internship, I have cultivated upstream decision-making capabilities—extracting the essential challenges from real-world constraints and forming technology selection and implementation plans to address them. I also place great emphasis on a thinking cycle that avoids being bound by prior hypotheses or single metrics when evaluating results, enabling objective assessment that leads to the next approach.',
+        },
+        {
+          subtitle: 'Teamwork and Leadership',
+          body: "I have formed teams on my own initiative and carried out 'implementation verification that secured over ¥3.6 million in budget for solving regional environmental challenges' and 'the conception, development, and launch of a production-grade SNS application.' In addition to these self-initiated projects, I have held multiple central roles within campus organizations (all leader or sub-leader positions), gaining experience in team goal-setting, task allocation, and progress management.",
         },
         {
           subtitle: 'Cross-Domain Tech Stack',
-          body: 'I have development experience across a wide range of domains including mobile (Swift / Flutter), machine learning (Python / PyTorch), and web (React). My strength lies in solving problems by choosing the right technology from multiple perspectives.',
-        },
-        {
-          subtitle: 'Balancing Research and Development',
-          body: 'I work on multiple development projects in parallel with research activities at Kyushu University. I strive to balance academic rigor with a practical, product-oriented mindset.',
+          body: 'I have development experience across a wide range of domains, including machine learning (Python/PyTorch), web (React), and mobile (Flutter/Swift). With machine learning via Python as my core strength, I have developed the ability to bring that expertise into real-world applications.',
         },
       ],
     },
@@ -117,10 +173,65 @@ export const profileContent: LocalizedContent<ProfileContent> = {
       heading: 'Links',
       items: [
         {
-          url: 'https://github.com/Applica-760',
-          title: 'GitHub',
-          description: 'Applica-760',
+          url: 'https://note.com/laplust/n/n35b7987e61c6',
+          title: 'Pick and Placeタスクの困難さに関する分析と考察 - robosuite / SAC -',
+          description: '2025.12.29',
+          image: 'https://assets.st-note.com/production/uploads/images/239755547/rectangle_large_type_2_fda7130e674151ac2d1933f5937e9d71.png?width=1280',
         },
+        {
+          url: 'https://note.com/laplust/n/n10dc6fbcd657',
+          title: 'SAHIを用いた微小物体検出',
+          description: '2025.11.18',
+          image: 'https://assets.st-note.com/production/uploads/images/229601215/rectangle_large_type_2_3584472641e773415d5fd23a465fc720.png?width=1280',
+        },
+        {
+          url: 'https://ibisml.org/ibis2024/posters/#:~:text=1%2DE%2D16,-%5D%20Echo%20State%20Network',
+          title: '27th Workshop on Information-Theoretic Learning Theory — Poster Research Presentation',
+          description: 'November 5, 2024',
+          image: 'https://ibisml.org/ibis2024/files/2024/05/ibisws-header-2024-1.png',
+        },
+        {
+          url: 'https://pypi.org/project/esn-lab/',
+          title: 'esn_lab PyPI Page',
+          description: '',
+          image: 'https://i.gzn.jp/img/2023/05/25/pypi-was-subpoenaed/00.jpg',
+          imageFit: 'height'
+        },
+        {
+          url: 'https://apps.apple.com/jp/app/clustime/id6749456160',
+          title: 'ClusTime -App Store-',
+          description: '',
+          image: 'https://toolbox.marketingtools.apple.com/_next/static/media/apps.1da5aac4.png',
+          imageFit: 'height'
+        },
+        {
+          url: 'https://play.google.com/store/apps/details?id=com.clustime.clustime.beta&hl=ja',
+          title: 'ClusTime -Play Store-',
+          description: '',
+          image: 'https://iconlab.kentakomiya.com/wp/wp-content/uploads/2019/09/icon0162-229x256.png',
+          imageFit: 'height'
+        },
+        {
+          url: 'https://wicon.jp/2023/final',
+          title: 'WiCON2023 Final Round Results Announcement',
+          description: 'March 5, 2024',
+          image: 'https://storage.googleapis.com/studio-design-asset-files/projects/v7qGwxbMqL/s-2400x1601_v-frms_webp_737747cb-01b5-4646-825e-33d71185b90f_small.webp',
+        },
+        {
+          url: 'https://www.sasebo.ac.jp/articles/38817/',
+          title: 'Kameyama Denki 6th Student Monozukuri & Idea Contest',
+          description: 'November 24, 2020',
+          image: 'https://www.sasebo.ac.jp/wp-content/uploads/2023/07/c422c9289972914bde9a8f41c6b9ad3b-900x675.jpg',
+        },
+        {
+          url: 'https://www.sasebo.ac.jp/articles/31082/',
+          title: "3rd Nishi-Kyushu Sasebo Wide-Area City Business Plan Contest 'START UP 99'",
+          description: 'April 21, 2022',
+          image: 'https://www.sasebo.ac.jp/wp-content/uploads/2022/04/8cf200473b0f84be2957e5231dbbaf05.jpg',
+        },
+
+
+
       ],
     },
   },
