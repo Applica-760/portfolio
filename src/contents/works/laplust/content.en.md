@@ -86,6 +86,11 @@ Among the projects we worked on collaboratively, the ones that have been publish
 
 <linkcard-container>
 
+<linkcard url="https://note.com/laplust/n/n1ce78dcea58b" 
+title="【失敗しない】SO-101 ARMのセットアップ" 
+description="2026年3月27日" 
+image="https://assets.st-note.com/production/uploads/images/262482150/rectangle_large_type_2_576d0f1c6ab83201af8be086a60e9c45.png?width=1280"></linkcard>
+
 <linkcard url="https://note.com/laplust/n/nc8e94a667f79"
 title="独自データを用いた模倣学習の実装 -LeRobot / SO101-"
 description="2026.3.10"
