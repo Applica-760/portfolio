@@ -47,8 +47,8 @@ export const profileContent: LocalizedContent<ProfileContent> = {
       heading: '経歴',
       items: [
         '2024年3月　佐世保工業高等専門学校 電子制御工学科 卒業',
-        '2026年3月　九州大学 工学部 融合基礎工学科 卒業予定',
-        '2026年4月　九州大学大学院 総合理工学府 総合理工学専攻 入学予定',
+        '2026年3月　九州大学 工学部 融合基礎工学科 卒業',
+        '2026年4月　九州大学大学院 総合理工学府 総合理工学専攻 入学',
       ],
     },
     techStack: {
@@ -145,8 +145,8 @@ export const profileContent: LocalizedContent<ProfileContent> = {
       heading: 'Career',
       items: [
         'March 2024 — Graduated from the Department of Electronic Control Engineering, National Institute of Technology, Sasebo College',
-        'March 2026 — Expected Graduation, Department of Interdisciplinary Fundamental Engineering, Faculty of Engineering, Kyushu University',
-        "April 2026 — Expected Enrollment, Interdisciplinary Graduate School of Engineering Sciences, Kyushu University (Master's Program)",
+        'March 2026 — Graduated, Department of Interdisciplinary Fundamental Engineering, Faculty of Engineering, Kyushu University',
+        "April 2026 — Enrolled in Interdisciplinary Graduate School of Engineering Sciences, Kyushu University (Master's Program)",
       ],
     },
     techStack: {
