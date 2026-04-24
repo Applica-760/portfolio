@@ -29,16 +29,22 @@ export const worksContent: LocalizedContent<WorksContent> = {
         tags: ['Python'],
       },
       {
+        id: 'contest',
+        title: 'Contest',
+        description: '離島で深刻化する漂着ごみ問題に対するソリューションを数百万単位の予算を獲得し開発',
+        tags: ['Python', 'Edge Device', 'LPWA/LoRA'],
+      },
+      {
         id: 'clustime',
         title: 'ClusTime',
         description: 'コミュニティ型SNS ClusTimeの開発',
         tags: ['Flutter', 'Dart', 'Swift', 'firebase'],
       },
       {
-        id: 'contest',
-        title: 'Contest',
-        description: '離島で深刻化する漂着ごみ問題に対するソリューションを数百万単位の予算を獲得し開発',
-        tags: ['Python', 'Edge Device', 'LPWA/LoRA'],
+        id: 'docdrill',
+        title: 'doc-drill',
+        description: 'インフラ技術を習熟するために簡単なRAGアプリケーションを構築',
+        tags: ['AWS', 'Terraform', 'Docker', 'Python', 'FastAPI'],
       },
       {
         id: 'portfolio',
@@ -80,6 +86,12 @@ export const worksContent: LocalizedContent<WorksContent> = {
         title: 'Contest Project',
         description: 'Developed a solution to the growing problem of marine debris on remote islands, securing a budget of several million yen',
         tags: ['Python', 'Edge Device', 'LPWA/LoRA'],
+      },
+      {
+        id: 'docdrill',
+        title: 'doc-drill',
+        description: 'Built a simple RAG application to gain hands-on experience with AWS infrastructure and IaC',
+        tags: ['AWS', 'Terraform', 'Docker', 'Python', 'FastAPI'],
       },
       {
         id: 'portfolio',

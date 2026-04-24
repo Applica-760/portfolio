@@ -2,7 +2,7 @@ import type { LocalizedContent } from './types';
 
 // 技術スタック（言語非依存）
 // SkillIcons ID（小文字）で指定
-export const techStack = ['github', 'apple', 'python', 'pytorch', 'swift', 'flutter', 'dart', 'react'];
+export const techStack = ['github', 'python', 'pytorch', 'typescript', 'react', 'aws', 'terraform', 'flutter', 'dart'];
 
 interface SummaryItem {
   subtitle: string;
