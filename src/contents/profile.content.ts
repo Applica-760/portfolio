@@ -131,9 +131,6 @@ export const profileContent: LocalizedContent<ProfileContent> = {
           description: '2022年4月21日',
           image: 'https://www.sasebo.ac.jp/wp-content/uploads/2022/04/8cf200473b0f84be2957e5231dbbaf05.jpg',
         },
-        
-        
-        
       ],
     },
   },
@@ -229,9 +226,6 @@ export const profileContent: LocalizedContent<ProfileContent> = {
           description: 'April 21, 2022',
           image: 'https://www.sasebo.ac.jp/wp-content/uploads/2022/04/8cf200473b0f84be2957e5231dbbaf05.jpg',
         },
-
-
-
       ],
     },
   },
