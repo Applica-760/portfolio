@@ -8,7 +8,7 @@ The implementation is available on [GitHub↗︎](https://github.com/Applica-760
 
 # Architecture
 
-<img src="https://github.com/Applica-760/doc-drill/blob/main/docs/assets/system-overview.svg" alt="Architecture" width="60%" />
+<img src="https://raw.githubusercontent.com/Applica-760/doc-drill/107538386b9da42e260e2525ccfd1decdd5b5e72/docs/assets/system-overview.svg" alt="Architecture" width="60%" />
 
 <br>
 
