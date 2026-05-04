@@ -8,7 +8,7 @@
 
 # 設計
 
-<img src="https://raw.githubusercontent.com/Applica-760/doc-drill/refs/heads/main/docs/assets/system-overview.svg" alt="アーキテクチャ" width="60%" />
+<img src="https://github.com/Applica-760/doc-drill/blob/main/docs/assets/system-overview.svg" alt="アーキテクチャ" width="60%" />
 
 <br>
 
