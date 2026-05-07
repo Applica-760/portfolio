@@ -26,10 +26,11 @@ The implementation is available on [GitHub↗︎](https://github.com/Applica-760
 **Backend:** FastAPI (Python)<br>
 **Database:** RDS PostgreSQL 16<br>
 **Storage:** Amazon S3<br>
-**AI / RAG:** Amazon Bedrock (Claude) / Knowledge Bases<br>
+**AI / RAG:** Amazon Bedrock (Claude / Titan Embeddings) / pgvector<br>
 **Infrastructure:** ECS Fargate / VPC / ALB / IAM<br>
 **IaC:** Terraform<br>
-**Development:** Docker / Docker Compose
+**Development:** Docker / Docker Compose / MinIO<br>
+**Code Quality:** Ruff / mypy / GitHub Actions (CI)
 
 <br>
 
@@ -44,8 +45,14 @@ Local development is fully self-contained with Docker Compose, minimizing drift 
 Frontend and backend run as separate containers, enabling independent scaling and clear separation of concerns.
 
 ## RAG Pipeline
-PDF content is vectorized and retrieved via Amazon Bedrock Knowledge Bases, then injected into prompts for Claude,<br>
-enabling question generation grounded in the uploaded document.
+
+The MVP used Amazon Bedrock Knowledge Bases for managed vector search, but I later migrated to a self-built pipeline to deepen my understanding of RAG internals.
+
+The current implementation chunks and embeds documents with Amazon Titan Embeddings, performs similarity search using pgvector (HNSW index) on RDS PostgreSQL, and injects the retrieved chunks into Claude's prompt to generate questions grounded in the uploaded PDF.
+
+## Type Safety & Code Quality
+
+FastAPI's Pydantic models serve as the Single Source of Truth: OpenAPI schemas are auto-generated from them, and TypeScript types on the frontend are derived from those schemas, eliminating manual type synchronization. Ruff (lint/format) and mypy (type checking) are integrated into a GitHub Actions CI pipeline for automated static analysis.
 
 <br>
 

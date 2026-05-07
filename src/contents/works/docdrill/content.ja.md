@@ -26,10 +26,11 @@
 **バックエンド：** FastAPI (Python)<br>
 **データベース：** RDS PostgreSQL 16<br>
 **ストレージ：** Amazon S3<br>
-**AI / RAG：** Amazon Bedrock（Claude）/ Knowledge Bases<br>
+**AI / RAG：** Amazon Bedrock（Claude / Titan Embeddings）/ pgvector<br>
 **インフラ：** ECS Fargate / VPC / ALB / IAM<br>
 **IaC：** Terraform<br>
-**開発環境：** Docker / Docker Compose
+**開発環境：** Docker / Docker Compose / MinIO<br>
+**コード品質：** Ruff / mypy / GitHub Actions（CI）
 
 <br>
 
@@ -44,8 +45,14 @@ Terraform で全インフラをコード管理し、環境の再現性と変更�
 フロントエンド・バックエンドを別コンテナで管理し、独立したスケーリングと責務分離を実現しています。
 
 ## RAGパイプライン
-Amazon Bedrock Knowledge Bases でPDF内容をベクトル化・検索し、Claudeへのプロンプトに組み込むことで<br>
-ドキュメントに基づいた問題生成を実現しています。
+
+MVPではAmazon Bedrock Knowledge Basesによるマネージドなベクトル検索を採用しましたが、技術習得の観点から自前パイプラインへ移行しました。
+
+現在の構成では、Amazon Titan Embeddingsでドキュメントをチャンク化・ベクトル化し、RDS PostgreSQL上のpgvector（HNSWインデックス）で類似検索を実行。取得した関連チャンクをClaudeへのプロンプトに組み込み、PDFに基づいた問題生成を実現しています。
+
+## 型安全性と品質管理
+
+FastAPIのPydanticモデルをSingle Source of TruthとしてOpenAPIスキーマを自動生成し、フロントエンドのTypeScript型定義と一致させることで手動の型管理を排除しています。Ruff（Lint / Format）とmypy（型チェック）を導入し、GitHub ActionsによるCIで静的解析を自動実行しています。
 
 <br>
 
