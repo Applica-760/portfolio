@@ -88,6 +88,11 @@
 
 <linkcard-container>
 
+<linkcard url="https://note.com/laplust/n/n24fd006c9b94" 
+title="SO101 ARM実機を用いた模倣学習Pick and Place -LeRobot / SO101-" 
+description="2026年6月6日" 
+image="https://assets.st-note.com/production/uploads/images/282905287/rectangle_large_type_2_1ef75b87e1824f64c158bf30ebaa0040.png?width=1280"></linkcard>
+
 <linkcard url="https://note.com/laplust/n/n1ce78dcea58b" 
 title="【失敗しない】SO-101 ARMのセットアップ" 
 description="2026年3月27日" 
