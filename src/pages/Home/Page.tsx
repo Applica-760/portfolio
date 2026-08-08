@@ -1,4 +1,4 @@
-import { Container, Title, Paper, Stack, SimpleGrid } from '@mantine/core';
+import { Container, Divider, Grid, Title, SimpleGrid } from '@mantine/core';
 import { useContent } from '../../hooks/useContent';
 import WorkCard from '../../components/works/WorkCard';
 import ProfileSection from '../../components/profile/ProfileSection';
@@ -11,50 +11,59 @@ function HomePage() {
   const { get } = useContent();
   const works = get(worksContent);
   const profile = get(profileContent);
+  const titleStyle = {
+    borderLeft: '4px solid var(--mantine-primary-color-filled)',
+    paddingLeft: '0.75rem',
+  };
 
   return (
-    <Container size="lg" py="xl">
-      <Stack gap="lg" mb="3rem">
-        <Title order={2} size="h1">
-          {profile.heading}
-        </Title>
-        <ProfileSection />
-      </Stack>
+    <Container size="xl" py="xl">
+      <Grid align="flex-start" gutter="lg">
+        <Grid.Col span={{ base: 12, md: 2 }}>
+          <Title order={2} size="h1" style={titleStyle}>{profile.heading}</Title>
+        </Grid.Col>
+        <Grid.Col span={{ base: 12, md: 10 }}>
+          <ProfileSection />
+        </Grid.Col>
+      </Grid>
 
-      <Stack gap="lg" mb="3rem">
-        <Title order={2} size="h1">
-          {profile.summary.heading}
-        </Title>
-        <SummarySection />
-      </Stack>
+      <Divider color="gray.3" my="md" />
+      <Grid align="flex-start" gutter="lg">
+        <Grid.Col span={{ base: 12, md: 2 }}>
+          <Title order={2} size="h1" style={titleStyle}>{profile.summary.heading}</Title>
+        </Grid.Col>
+        <Grid.Col span={{ base: 12, md: 10 }}>
+          <SummarySection />
+        </Grid.Col>
+      </Grid>
 
-      <Stack gap="lg" mb="3rem">
-        <Title order={2} size="h1">
-          {works.heading}
-        </Title>
-        <Paper p="md" radius="md">
-        <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
-          {works.works.map((work) => (
-            <WorkCard
-              key={work.id}
-              work={work}
-            />
-          ))}
-        </SimpleGrid>
-        </Paper>
-      </Stack>
+      <Divider color="gray.3" my="md" />
+      <Grid align="flex-start" gutter="lg">
+        <Grid.Col span={{ base: 12, md: 2 }}>
+          <Title order={2} size="h1" style={titleStyle}>{works.heading}</Title>
+        </Grid.Col>
+        <Grid.Col span={{ base: 12, md: 10 }}>
+          <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
+            {works.works.map((work) => (
+              <WorkCard key={work.id} work={work} />
+            ))}
+          </SimpleGrid>
+        </Grid.Col>
+      </Grid>
 
-      <Stack gap="lg">
-        <Title order={2} size="h1">
-          {profile.links.heading}
-        </Title>
-        <LinkCardContainer>
-          {profile.links.items.map((link) => (
-            <LinkCard key={link.url} {...link} />
-          ))}
-        </LinkCardContainer>
-        
-      </Stack>
+      <Divider color="gray.3" my="md" />
+      <Grid align="flex-start" gutter="lg">
+        <Grid.Col span={{ base: 12, md: 2 }}>
+          <Title order={2} size="h1" style={titleStyle}>{profile.links.heading}</Title>
+        </Grid.Col>
+        <Grid.Col span={{ base: 12, md: 10 }}>
+          <LinkCardContainer>
+            {profile.links.items.map((link) => (
+              <LinkCard key={link.url} {...link} />
+            ))}
+          </LinkCardContainer>
+        </Grid.Col>
+      </Grid>
     </Container>
   );
 }

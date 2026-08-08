@@ -7,7 +7,7 @@ function SummarySection() {
   const profile = get(profileContent);
 
   return (
-    <Paper p="md" radius="md">
+    <Paper p="md" radius="md" withBorder style={{ borderWidth: '2px' }}>
       <Stack gap="md">
         {profile.summary.items.map((item, index) => (
           <div key={index}>

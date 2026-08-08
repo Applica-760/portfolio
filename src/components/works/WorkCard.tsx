@@ -34,10 +34,10 @@ function WorkCard({ work }: WorkCardProps) {
         e.currentTarget.style.boxShadow = '';
       }}
     >
-      <Text fw={600} size="lg" mb="xs">
+      <Text fw={700} size="xl" mb="xs">
         {work.title}
       </Text>
-      <Text size="sm" c="dimmed" mb="md">
+      <Text size="sm" c="dimmed" mb="md" lineClamp={2} style={{ height: '2.7rem' }}>
         {work.description}
       </Text>
       <TagList tags={work.tags} size="sm" />
