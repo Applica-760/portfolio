@@ -1,0 +1,37 @@
+schema_version: 1
+task:
+  id: TASK-001
+  state: completed
+  title: ポートフォリオのデザイン改修
+  objective: 既存のReact/Mantineコンポーネント構成とコンテンツ管理を維持したまま、ポートフォリオ全体をwhubのようなiOSライクな印象へ改修する
+  approach:
+  - 明るいグレー背景と白いボックスを基調にする
+  - iOSライクな余白、細い境界、控えめな角丸、システムフォントを用いる
+  - 遊び心とモダンさは、過剰な装飾ではなく軽いインタラクションで表現する
+  - 新規依存、新規ページ、ダークモードは追加しない
+  depends_on: []
+  interruption_task_id: null
+  interruption_reason: null
+  interruption_source_task_id: null
+plan:
+  acceptance: []
+  phases:
+  - title: デザイン改修
+    acceptance: []
+    steps:
+    - description: iOSライクなデザイン改修を実装・build検証・PR統合する
+      state: done
+      skip_reason: null
+      deleted: false
+    log:
+    - value:
+        verification: npm run build succeeded; lint has 7 pre-existing failures
+      deleted: false
+    deleted: false
+approvals:
+- actor: user
+acceptance_results: []
+change_requests: []
+cancellation: null
+result:
+  summary: 'PR #1 merged; build succeeded; lint failures were confirmed pre-existing.'
