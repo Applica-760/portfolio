@@ -4,7 +4,6 @@ import { MantineProvider } from '@mantine/core';
 import { RouterProvider } from 'react-router-dom';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import { router } from './routes';
-import '@mantine/core/styles.css';
 import '../styles/App.css';
 
 function App() {

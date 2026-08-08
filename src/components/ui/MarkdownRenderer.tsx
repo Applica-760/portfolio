@@ -24,7 +24,8 @@ function hasBlockLevelChild(children: ReactNode): boolean {
 
 function MarkdownRenderer({ content }: MarkdownRendererProps) {
   return (
-    <Markdown
+    <div className="markdown-content">
+      <Markdown
       rehypePlugins={[rehypeRaw]}
       components={{
         h1: ({ children }: { children: ReactNode }) => (
@@ -145,9 +146,10 @@ function MarkdownRenderer({ content }: MarkdownRendererProps) {
           );
         },
       } as any}
-    >
-      {content}
-    </Markdown>
+      >
+        {content}
+      </Markdown>
+    </div>
   );
 }
 

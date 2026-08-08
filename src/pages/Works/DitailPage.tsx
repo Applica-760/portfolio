@@ -1,5 +1,5 @@
-import { Container, Title, Text, Stack, Group } from '@mantine/core';
-import { useParams, Navigate } from 'react-router-dom';
+import { Anchor, Container, Paper, Title, Text, Stack, Group } from '@mantine/core';
+import { Link, useParams, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useContent } from '../../hooks/useContent';
 import { worksContent } from '../../contents';
@@ -32,19 +32,27 @@ function WorkDetailPage() {
 
   return (
     <Container size="lg" py="xl">
-      <Stack gap="lg">
+      <Anchor component={Link} to={`/${lang}`} size="lg" fw={700} c="gray.5" style={{ left: '1rem', position: 'fixed', top: '4rem' }}>
+        {'< Top'}
+      </Anchor>
+      <Stack
+        gap="xs"
+        mb="lg"
+        style={{ borderLeft: '4px solid var(--mantine-primary-color-filled)', paddingLeft: '0.75rem' }}
+      >
         <Group gap="xs">
           <Title order={1}>{work.title}</Title>
-          
           <TagList tags={work.tags} size="md" />
         </Group>
 
-        <Text size="sm" c="dimmed" style={{ paddingLeft: '1.5rem' }}>
+        <Text size="sm" c="dimmed">
           {work.description}
         </Text>
-
-        {markdownContent && <MarkdownRenderer content={markdownContent} />}
       </Stack>
+
+      <Paper p="lg" radius="md" withBorder style={{ borderWidth: '2px' }}>
+        {markdownContent && <MarkdownRenderer content={markdownContent} />}
+      </Paper>
     </Container>
   );
 }

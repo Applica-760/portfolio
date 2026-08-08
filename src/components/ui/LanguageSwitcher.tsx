@@ -16,17 +16,19 @@ function LanguageSwitcher() {
   };
 
   return (
-    <Group gap="xs">
+    <Group gap={0}>
       <Button
-        variant={language === 'ja' ? 'filled' : 'subtle'}
+        variant={language === 'ja' ? 'filled' : 'outline'}
         size="xs"
+        style={{ borderRadius: '4px 0 0 4px' }}
         onClick={() => switchLanguage('ja')}
       >
         JP
       </Button>
       <Button
-        variant={language === 'en' ? 'filled' : 'subtle'}
+        variant={language === 'en' ? 'filled' : 'outline'}
         size="xs"
+        style={{ borderRadius: '0 4px 4px 0', marginLeft: '-1px' }}
         onClick={() => switchLanguage('en')}
       >
         EN
